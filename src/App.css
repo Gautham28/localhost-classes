@@ -423,6 +423,183 @@ body {
   font-weight: 500;
 }
 
+.curriculum-section {
+  padding: 18px 0 120px;
+  background: #f3f4f6;
+  color: #25282d;
+}
+
+.curriculum-inner {
+  width: min(1060px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.curriculum-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.curriculum-heading h2 {
+  margin: 0;
+  font-size: clamp(2.25rem, 4.25vw, 4.95rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: #202226;
+}
+
+.curriculum-kicker {
+  margin: 8px 40px 0 0;
+  color: #6f72ff;
+  font-size: 13px;
+  font-weight: 700;
+  position: relative;
+  white-space: nowrap;
+}
+
+.curriculum-kicker::before {
+  content: '';
+  position: absolute;
+  right: 100%;
+  margin-right: 12px;
+  top: -10px;
+  width: 72px;
+  height: 24px;
+  border-top: 2px solid #8588ff;
+  border-left: 2px solid #8588ff;
+  border-radius: 26px 0 0 0;
+}
+
+.curriculum-layout {
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: 12px;
+  align-items: start;
+}
+
+.curriculum-photo-card {
+  background: #e5e1da;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #dbdbe2;
+  aspect-ratio: 0.95 / 1;
+}
+
+.curriculum-photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transform: scale(1.18);
+  transform-origin: center top;
+}
+
+.curriculum-panels {
+  border: 1px solid #d8dbe3;
+  border-radius: 10px;
+  background: #e8ebf1;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.module-card {
+  background: #f8f8f9;
+  border: 1px solid #e0e2e8;
+  border-radius: 9px;
+  padding: 12px 14px;
+}
+
+.module-card-open {
+  padding-bottom: 8px;
+}
+
+.module-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.module-meta {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #8a8f98;
+  font-weight: 700;
+}
+
+.module-header h3 {
+  margin: 5px 0 0;
+  font-size: 39px;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: #2b2f34;
+}
+
+.module-header button {
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 8px;
+  background: #1f2228;
+  color: #f4f5f7;
+  font-size: 24px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.module-body {
+  margin-top: 11px;
+}
+
+.module-row {
+  border-top: 1px solid #dfe1e7;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.module-row p {
+  margin: 0;
+  font-size: 15px;
+  color: #5f646c;
+  font-weight: 600;
+}
+
+.module-row span {
+  color: #8f949c;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.module-extra {
+  margin: 13px 0 0;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #5f646c;
+  font-weight: 600;
+}
+
+.module-body a {
+  display: inline-block;
+  margin-top: 8px;
+  color: #31353b;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
 /* Desktop screenshot was captured on a very large canvas */
 @media (max-width: 1500px) {
   .learn-card h3 {
@@ -431,6 +608,10 @@ body {
 
   .learn-card p {
     font-size: 24px;
+  }
+
+  .module-header h3 {
+    font-size: 35px;
   }
 }
 
@@ -501,6 +682,45 @@ body {
 
   .learn-card p {
     font-size: 18px;
+  }
+
+  .curriculum-section {
+    padding: 0 0 84px;
+  }
+
+  .curriculum-heading {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .curriculum-heading h2 {
+    font-size: clamp(2rem, 6vw, 3.2rem);
+  }
+
+  .curriculum-kicker {
+    margin: 0;
+  }
+
+  .curriculum-kicker::before {
+    display: none;
+  }
+
+  .curriculum-layout {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .curriculum-photo-card {
+    max-height: 460px;
+    aspect-ratio: auto;
+  }
+
+  .curriculum-photo-card img {
+    transform: scale(1.1);
+  }
+
+  .module-header h3 {
+    font-size: 29px;
   }
 }
 
@@ -598,5 +818,72 @@ body {
 
   .learn-card p {
     font-size: 15px;
+  }
+
+  .curriculum-section {
+    padding: 0 0 64px;
+  }
+
+  .curriculum-inner {
+    width: calc(100% - 20px);
+  }
+
+  .curriculum-heading h2 {
+    font-size: clamp(1.8rem, 8.2vw, 2.4rem);
+  }
+
+  .curriculum-kicker {
+    font-size: 12px;
+  }
+
+  .curriculum-layout {
+    margin-top: 20px;
+  }
+
+  .curriculum-photo-card {
+    max-height: 330px;
+  }
+
+  .curriculum-photo-card img {
+    transform: scale(1.04);
+  }
+
+  .curriculum-panels {
+    padding: 5px;
+    gap: 5px;
+  }
+
+  .module-card {
+    padding: 10px 11px;
+  }
+
+  .module-meta {
+    font-size: 12px;
+  }
+
+  .module-header h3 {
+    font-size: 22px;
+    margin-top: 3px;
+  }
+
+  .module-header button {
+    width: 26px;
+    height: 26px;
+    font-size: 20px;
+    border-radius: 7px;
+  }
+
+  .module-row {
+    min-height: 34px;
+  }
+
+  .module-row p,
+  .module-extra {
+    font-size: 13px;
+  }
+
+  .module-row span,
+  .module-body a {
+    font-size: 12px;
   }
 }

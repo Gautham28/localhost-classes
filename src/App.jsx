@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Learn from './components/learn'
+import Curriculum from './components/Curriculum'
 import './App.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Hero />
       </div>
       <Learn />
+      <Curriculum />
     </main>
   )
 }
