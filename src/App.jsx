@@ -2,6 +2,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Learn from './components/learn'
 import Curriculum from './components/Curriculum'
+import Reviews from './components/Reviews'
 import './App.css'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       </div>
       <Learn />
       <Curriculum />
+      <Reviews />
     </main>
   )
 }

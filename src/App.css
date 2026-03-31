@@ -600,6 +600,159 @@ body {
   font-weight: 800;
 }
 
+.reviews-section {
+  position: relative;
+  overflow: hidden;
+  padding: 104px 0 84px;
+  background: #1f2024;
+  color: #f5f6f7;
+}
+
+.reviews-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.26) 1.2px, transparent 1.3px);
+  background-size: 260px 260px;
+  opacity: 0.42;
+}
+
+.reviews-inner {
+  position: relative;
+  z-index: 2;
+  width: min(1060px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.reviews-watermark {
+  position: absolute;
+  top: -52px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: clamp(6.5rem, 17vw, 12rem);
+  line-height: 0.8;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: rgba(255, 255, 255, 0.04);
+  pointer-events: none;
+  user-select: none;
+}
+
+.reviews-inner h2 {
+  margin: 84px 0 0;
+  text-align: center;
+  font-size: clamp(2rem, 4.4vw, 4rem);
+  line-height: 1.06;
+  letter-spacing: -0.03em;
+  color: #f6f6f7;
+}
+
+.review-cards {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.review-card {
+  min-height: 290px;
+  padding: 22px 22px 20px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #f4f4f4;
+  color: #31353b;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-stars {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #202328;
+}
+
+.review-text {
+  margin: 12px 0 0;
+  font-size: 15px;
+  line-height: 1.48;
+  color: #5c6168;
+  font-weight: 600;
+}
+
+.review-user {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.review-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.avatar-erika {
+  background:
+    radial-gradient(circle at 65% 37%, #d6aa8f 0 17%, transparent 18%),
+    radial-gradient(circle at 48% 39%, #f6dcc8 0 23%, transparent 24%),
+    radial-gradient(circle at 48% 70%, #1c1f27 0 36%, transparent 37%),
+    linear-gradient(140deg, #f3e4d7 0%, #c0b6a8 100%);
+}
+
+.avatar-daisy {
+  background:
+    radial-gradient(circle at 58% 37%, #e8b18c 0 16%, transparent 17%),
+    radial-gradient(circle at 50% 42%, #f3d7be 0 24%, transparent 25%),
+    radial-gradient(circle at 42% 29%, #b6784d 0 25%, transparent 26%),
+    linear-gradient(140deg, #3e7242 0%, #8ab386 45%, #dad3c3 100%);
+}
+
+.avatar-annalee {
+  background:
+    radial-gradient(circle at 54% 41%, #8d593e 0 17%, transparent 18%),
+    radial-gradient(circle at 49% 44%, #c78967 0 23%, transparent 24%),
+    radial-gradient(circle at 42% 35%, #2c1e19 0 25%, transparent 26%),
+    linear-gradient(140deg, #1c2833 0%, #4a392f 45%, #233521 100%);
+}
+
+.review-name {
+  margin: 0;
+  color: #262a31;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.review-role {
+  margin: 1px 0 0;
+  color: #5f646c;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.review-dots {
+  margin: 26px auto 0;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.review-dots span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.review-dots .active {
+  background: #fff;
+}
+
 /* Desktop screenshot was captured on a very large canvas */
 @media (max-width: 1500px) {
   .learn-card h3 {
@@ -612,6 +765,14 @@ body {
 
   .module-header h3 {
     font-size: 35px;
+  }
+
+  .reviews-watermark {
+    top: -40px;
+  }
+
+  .review-card {
+    min-height: 260px;
   }
 }
 
@@ -721,6 +882,24 @@ body {
 
   .module-header h3 {
     font-size: 29px;
+  }
+
+  .reviews-section {
+    padding: 86px 0 72px;
+  }
+
+  .reviews-inner h2 {
+    margin-top: 64px;
+  }
+
+  .review-cards {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 36px;
+  }
+
+  .review-card {
+    min-height: 0;
   }
 }
 
@@ -884,6 +1063,46 @@ body {
 
   .module-row span,
   .module-body a {
+    font-size: 12px;
+  }
+
+  .reviews-section {
+    padding: 72px 0 58px;
+  }
+
+  .reviews-inner {
+    width: calc(100% - 20px);
+  }
+
+  .reviews-watermark {
+    top: -22px;
+    font-size: clamp(4rem, 20vw, 7rem);
+  }
+
+  .reviews-inner h2 {
+    margin-top: 44px;
+    font-size: clamp(1.5rem, 7.2vw, 2.1rem);
+    line-height: 1.14;
+  }
+
+  .review-card {
+    padding: 16px;
+    border-radius: 11px;
+  }
+
+  .review-stars {
+    font-size: 17px;
+  }
+
+  .review-text {
+    font-size: 13px;
+  }
+
+  .review-name {
+    font-size: 14px;
+  }
+
+  .review-role {
     font-size: 12px;
   }
 }
