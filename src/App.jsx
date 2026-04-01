@@ -4,6 +4,7 @@ import Learn from './components/learn'
 import Curriculum from './components/Curriculum'
 import Reviews from './components/Reviews'
 import Why from './components/Why'
+import Pricing from './components/Pricing'
 import './App.css'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Curriculum />
       <Reviews />
       <Why />
+      <Pricing />
     </main>
   )
 }
