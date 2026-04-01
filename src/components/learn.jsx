@@ -111,7 +111,6 @@ function Learn() {
     <section className="learn-section">
       <div className="learn-inner">
         <div className="learn-title-wrap">
-          <p className="learn-kicker">Is this you?</p>
           <h2>
             Struggling to understand
             <br />
@@ -132,9 +131,6 @@ function Learn() {
             </article>
           ))}
         </div>
-      </div>
-      <div className="learn-floor" aria-hidden="true">
-        <span>Trusted by.</span>
       </div>
     </section>
   )

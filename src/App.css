@@ -420,29 +420,8 @@ body {
   align-items: center;
 }
 
-.learn-kicker {
-  margin: 0 auto;
-  width: max-content;
-  color: #69a7ea;
-  font-size: 13px;
-  font-weight: 700;
-  position: relative;
-}
-
-.learn-kicker::after {
-  content: '';
-  position: absolute;
-  width: 92px;
-  height: 30px;
-  border-top: 2px solid #71abeb;
-  border-right: 2px solid #71abeb;
-  border-radius: 0 48px 0 0;
-  top: -11px;
-  left: calc(100% + 10px);
-}
-
 .learn-title-wrap h2 {
-  margin: 8px 0 0;
+  margin: 0;
   text-align: center;
   font-size: 48px;
   line-height: 1.2;
@@ -511,68 +490,43 @@ body {
   font-weight: 400;
 }
 
-.learn-floor {
-  width: min(1200px, 100%);
-  height: 92px;
-  margin: 34px auto 0;
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  color: #7f8490;
-  font-size: 14px;
-}
-
-.learn-floor::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(to top, rgba(100, 114, 133, 0.08), transparent 74%),
-    repeating-linear-gradient(to right, rgba(116, 125, 141, 0.14) 0 1px, transparent 1px 36px),
-    repeating-linear-gradient(to bottom, rgba(116, 125, 141, 0.1) 0 1px, transparent 1px 24px);
-  transform: perspective(480px) rotateX(68deg);
-  transform-origin: top;
-  opacity: 0.45;
-}
-
-.learn-floor span {
-  position: relative;
-  z-index: 1;
-}
-
 .curriculum-section {
-  padding: 18px 0 120px;
+  padding: 65px 30px 130px;
   background: #f3f4f6;
-  color: #25282d;
+  color: #212121;
 }
 
 .curriculum-inner {
-  width: min(1060px, calc(100% - 32px));
+  width: min(1200px, 100%);
   margin: 0 auto;
 }
 
 .curriculum-heading {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 20px;
+  position: relative;
+  width: 100%;
+  min-height: 155px;
 }
 
 .curriculum-heading h2 {
   margin: 0;
-  font-size: clamp(2.25rem, 4.25vw, 4.95rem);
-  line-height: 1.05;
-  letter-spacing: -0.03em;
-  color: #202226;
+  width: 485px;
+  max-width: 100%;
+  font-size: 48px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+  color: #212121;
 }
 
 .curriculum-kicker {
-  margin: 8px 40px 0 0;
+  margin: 0;
+  position: absolute;
+  left: 532px;
+  top: 7px;
   color: #6f72ff;
   font-size: 13px;
-  font-weight: 700;
-  position: relative;
+  line-height: 1;
+  font-weight: 500;
   white-space: nowrap;
 }
 
@@ -580,142 +534,158 @@ body {
   content: '';
   position: absolute;
   right: 100%;
-  margin-right: 12px;
-  top: -10px;
-  width: 72px;
+  margin-right: 10px;
+  top: -12px;
+  width: 64px;
   height: 24px;
-  border-top: 2px solid #8588ff;
-  border-left: 2px solid #8588ff;
-  border-radius: 26px 0 0 0;
+  border-top: 2px solid #9297ff;
+  border-left: 2px solid #9297ff;
+  border-radius: 28px 0 0 0;
 }
 
 .curriculum-layout {
-  margin-top: 34px;
+  margin-top: 22px;
   display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
-  gap: 12px;
+  grid-template-columns: 550px 610px;
+  gap: 40px;
   align-items: start;
 }
 
 .curriculum-photo-card {
-  background: #e5e1da;
-  border-radius: 12px;
+  width: 550px;
+  max-width: 100%;
+  height: 600px;
+  background: #ded7cc;
+  border-radius: 8px;
   overflow: hidden;
-  border: 1px solid #dbdbe2;
-  aspect-ratio: 0.95 / 1;
+  border: 1px solid #dbdde4;
 }
 
 .curriculum-photo-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center center;
   display: block;
-  transform: scale(1.18);
-  transform-origin: center top;
 }
 
 .curriculum-panels {
+  width: 610px;
+  max-width: 100%;
   border: 1px solid #d8dbe3;
   border-radius: 10px;
   background: #e8ebf1;
-  padding: 6px;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
 
 .module-card {
-  background: #f8f8f9;
+  background: #ffffff;
   border: 1px solid #e0e2e8;
-  border-radius: 9px;
-  padding: 12px 14px;
+  border-radius: 8px;
+  padding: 20px;
 }
 
 .module-card-open {
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .module-header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 12px;
+  gap: 14px;
 }
 
 .module-meta {
   margin: 0;
   font-size: 14px;
-  line-height: 1.2;
-  color: #8a8f98;
-  font-weight: 700;
+  line-height: 1;
+  color: #555555;
+  font-weight: 400;
 }
 
 .module-header h3 {
-  margin: 5px 0 0;
-  font-size: 39px;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-  color: #2b2f34;
+  margin: 8px 0 0;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: #212121;
+  font-weight: 700;
 }
 
 .module-header button {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   border: 0;
   border-radius: 8px;
-  background: #1f2228;
-  color: #f4f5f7;
-  font-size: 24px;
+  background: #212121;
+  color: #ffffff;
+  font-size: 30px;
   line-height: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  padding: 0;
+  flex: 0 0 40px;
 }
 
 .module-body {
-  margin-top: 11px;
+  margin-top: 16px;
 }
 
 .module-row {
-  border-top: 1px solid #dfe1e7;
-  min-height: 42px;
-  display: flex;
+  border-top: 1px solid #e0e4eb;
+  min-height: 44px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  column-gap: 10px;
 }
 
 .module-row p {
   margin: 0;
-  font-size: 15px;
-  color: #5f646c;
-  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555;
+  font-weight: 400;
 }
 
 .module-row span {
-  color: #8f949c;
-  font-size: 14px;
-  font-weight: 700;
+  color: #bac2d3;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 .module-extra {
-  margin: 13px 0 0;
-  font-size: 15px;
-  line-height: 1.4;
-  color: #5f646c;
-  font-weight: 600;
+  margin: 14px 0 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555;
+  font-weight: 400;
+}
+
+.module-lorem {
+  margin: 10px 0 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555;
+  font-weight: 400;
 }
 
 .module-body a {
   display: inline-block;
-  margin-top: 8px;
-  color: #31353b;
+  margin-top: 6px;
+  color: #212121;
   text-decoration: underline;
   text-underline-offset: 2px;
-  font-size: 14px;
-  font-weight: 800;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 600;
 }
 
 .reviews-section {
@@ -1691,10 +1661,6 @@ body {
     padding-top: 16px;
   }
 
-  .learn-kicker::after {
-    display: none;
-  }
-
   .learn-title-wrap h2 {
     font-size: 40px;
     line-height: 1.15;
@@ -1733,26 +1699,26 @@ body {
     line-height: 1.45;
   }
 
-  .learn-floor {
-    margin-top: 24px;
-    height: 72px;
-    font-size: 13px;
-  }
-
   .curriculum-section {
-    padding: 0 0 84px;
+    padding: 48px 20px 92px;
   }
 
   .curriculum-heading {
+    display: flex;
+    min-height: 0;
     flex-direction: column;
-    gap: 10px;
+    gap: 14px;
   }
 
   .curriculum-heading h2 {
+    width: 100%;
     font-size: clamp(2rem, 6vw, 3.2rem);
   }
 
   .curriculum-kicker {
+    position: relative;
+    left: auto;
+    top: auto;
     margin: 0;
   }
 
@@ -1761,21 +1727,35 @@ body {
   }
 
   .curriculum-layout {
+    margin-top: 24px;
     grid-template-columns: 1fr;
-    gap: 14px;
+    gap: 16px;
   }
 
   .curriculum-photo-card {
-    max-height: 460px;
-    aspect-ratio: auto;
+    width: min(550px, 100%);
+    height: auto;
+    aspect-ratio: 11 / 12;
   }
 
   .curriculum-photo-card img {
-    transform: scale(1.1);
+    height: 100%;
+  }
+
+  .curriculum-panels {
+    width: 100%;
   }
 
   .module-header h3 {
-    font-size: 29px;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .module-header button {
+    width: 36px;
+    height: 36px;
+    font-size: 26px;
+    flex-basis: 36px;
   }
 
   .reviews-section {
@@ -2032,12 +2012,8 @@ body {
     padding-top: 8px;
   }
 
-  .learn-kicker {
-    font-size: 12px;
-  }
-
   .learn-title-wrap h2 {
-    margin-top: 6px;
+    margin-top: 0;
     font-size: clamp(2.15rem, 10vw, 2.75rem);
     line-height: 1.2;
   }
@@ -2075,18 +2051,12 @@ body {
     line-height: 1.5;
   }
 
-  .learn-floor {
-    margin-top: 18px;
-    height: 58px;
-    font-size: 12px;
-  }
-
   .curriculum-section {
-    padding: 0 0 64px;
+    padding: 36px 10px 64px;
   }
 
   .curriculum-inner {
-    width: calc(100% - 20px);
+    width: 100%;
   }
 
   .curriculum-heading h2 {
@@ -2098,24 +2068,25 @@ body {
   }
 
   .curriculum-layout {
-    margin-top: 20px;
+    margin-top: 18px;
   }
 
   .curriculum-photo-card {
-    max-height: 330px;
+    width: 100%;
+    max-height: none;
   }
 
   .curriculum-photo-card img {
-    transform: scale(1.04);
+    width: 100%;
+    height: 100%;
   }
 
   .curriculum-panels {
-    padding: 5px;
-    gap: 5px;
+    gap: 6px;
   }
 
   .module-card {
-    padding: 10px 11px;
+    padding: 14px;
   }
 
   .module-meta {
@@ -2123,29 +2094,31 @@ body {
   }
 
   .module-header h3 {
-    font-size: 22px;
-    margin-top: 3px;
+    font-size: 18px;
+    margin-top: 6px;
+    line-height: 1.2;
   }
 
   .module-header button {
-    width: 26px;
-    height: 26px;
-    font-size: 20px;
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
     border-radius: 7px;
+    flex-basis: 32px;
   }
 
   .module-row {
-    min-height: 34px;
+    min-height: 36px;
+    column-gap: 8px;
   }
 
   .module-row p,
-  .module-extra {
-    font-size: 13px;
-  }
-
   .module-row span,
+  .module-extra,
+  .module-lorem,
   .module-body a {
-    font-size: 12px;
+    font-size: 13px;
+    line-height: 1.5;
   }
 
   .reviews-section {
