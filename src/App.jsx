@@ -6,6 +6,7 @@ import Reviews from './components/Reviews'
 import Why from './components/Why'
 import Pricing from './components/Pricing'
 import Faq from './components/Faq'
+import Footer from './components/Footer'
 import './App.css'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Why />
       <Pricing />
       <Faq />
+      <Footer />
     </main>
   )
 }
