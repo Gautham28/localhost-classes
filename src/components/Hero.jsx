@@ -43,7 +43,7 @@ function Hero() {
         </div>
 
         <button className="hero-cta" type="button">
-          Enroll Now For $399
+          enroll now for $399
         </button>
       </div>
 
