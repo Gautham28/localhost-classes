@@ -2,28 +2,45 @@ import heroCard from '../assets/hero-card.png'
 
 const points = ['Zero to hero in 30 days', 'Real client project', 'Lifetime support']
 
+function PointIcon() {
+  return (
+    <svg viewBox="0 0 56 56" fill="none" aria-hidden="true">
+      <circle cx="28" cy="28" r="28" fill="currentColor" fillOpacity="0.25" />
+      <path
+        d="M38 21L24.8 34.2L18 27.4"
+        stroke="currentColor"
+        strokeWidth="4.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
+
 function Hero() {
   return (
     <section className="hero-section">
       <div className="hero-content">
-        <h1>
-          Master low-code
-          <br />
-          development to create
-          <br />
-          <span className="heading-highlight">high-converting</span> sites
-        </h1>
+        <div className="hero-title-list">
+          <h1>
+            Master <span className="hero-soft">low-code</span>
+            <br />
+            development to create
+            <br />
+            <span className="heading-highlight">high-converting</span> sites
+          </h1>
 
-        <ul className="hero-points">
-          {points.map((point) => (
-            <li key={point}>
-              <span aria-hidden="true" className="point-check">
-                ✓
-              </span>
-              {point}
-            </li>
-          ))}
-        </ul>
+          <ul className="hero-points">
+            {points.map((point) => (
+              <li key={point}>
+                <span aria-hidden="true" className="point-check">
+                  <PointIcon />
+                </span>
+                <p>{point}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
 
         <button className="hero-cta" type="button">
           Enroll Now For $399
