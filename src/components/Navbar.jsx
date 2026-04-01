@@ -1,4 +1,9 @@
-const navItems = ['Home', 'Curriculum', 'Essentials', 'Contact']
+const navItems = [
+  { label: 'Home', href: '#', active: true },
+  { label: 'Curriculum', href: '#', active: false },
+  { label: 'Essentials', href: '#', active: false, hasCaret: true },
+  { label: 'Contact', href: '#', active: false },
+]
 
 function Navbar() {
   return (
@@ -10,9 +15,11 @@ function Navbar() {
 
         <ul className="nav-links">
           {navItems.map((item) => (
-            <li key={item}>
-              <a href="#">{item}</a>
-              {item === 'Essentials' && <span className="caret">▾</span>}
+            <li key={item.label}>
+              <a className={item.active ? 'active' : ''} href={item.href}>
+                {item.label}
+              </a>
+              {item.hasCaret && <span className="caret">▾</span>}
             </li>
           ))}
         </ul>
