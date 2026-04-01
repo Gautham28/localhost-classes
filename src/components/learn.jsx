@@ -110,12 +110,14 @@ function Learn() {
   return (
     <section className="learn-section">
       <div className="learn-inner">
-        <p className="learn-kicker">Is this you?</p>
-        <h2>
-          Struggling to understand
-          <br />
-          where to start or how to grow?
-        </h2>
+        <div className="learn-title-wrap">
+          <p className="learn-kicker">Is this you?</p>
+          <h2>
+            Struggling to understand
+            <br />
+            where to start or how to grow?
+          </h2>
+        </div>
 
         <div className="learn-grid">
           {learnCards.map((card) => (
@@ -123,11 +125,16 @@ function Learn() {
               <span className="learn-icon">
                 <CardIcon type={card.icon} />
               </span>
-              <h3>{card.title}</h3>
-              <p>{card.text}</p>
+              <div className="learn-copy">
+                <h3>{card.title}</h3>
+                <p>{card.text}</p>
+              </div>
             </article>
           ))}
         </div>
+      </div>
+      <div className="learn-floor" aria-hidden="true">
+        <span>Trusted by.</span>
       </div>
     </section>
   )

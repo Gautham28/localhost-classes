@@ -398,22 +398,33 @@ body {
 .learn-section {
   position: relative;
   z-index: 4;
-  margin-top: -34px;
-  padding: 118px 0 128px;
-  background: #f3f4f6;
+  margin-top: 0;
+  padding: 130px 30px 65px;
+  background: #ffffff;
   color: #222428;
 }
 
 .learn-inner {
-  width: min(1060px, calc(100% - 32px));
+  width: min(1200px, 100%);
   margin: 0 auto;
+}
+
+.learn-title-wrap {
+  width: 670px;
+  max-width: 100%;
+  min-height: 155.2px;
+  margin: 0 auto;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .learn-kicker {
   margin: 0 auto;
   width: max-content;
-  color: #6a9dd9;
-  font-size: 14px;
+  color: #69a7ea;
+  font-size: 13px;
   font-weight: 700;
   position: relative;
 }
@@ -421,47 +432,51 @@ body {
 .learn-kicker::after {
   content: '';
   position: absolute;
-  width: 88px;
-  height: 28px;
-  border-top: 2px solid #6ea4e2;
-  border-right: 2px solid #6ea4e2;
-  border-radius: 0 46px 0 0;
-  top: -10px;
+  width: 92px;
+  height: 30px;
+  border-top: 2px solid #71abeb;
+  border-right: 2px solid #71abeb;
+  border-radius: 0 48px 0 0;
+  top: -11px;
   left: calc(100% + 10px);
 }
 
-.learn-section h2 {
-  margin: 14px 0 54px;
+.learn-title-wrap h2 {
+  margin: 8px 0 0;
   text-align: center;
-  font-size: clamp(2rem, 4.5vw, 4.1rem);
-  line-height: 1.05;
-  letter-spacing: -0.03em;
-  color: #202226;
+  font-size: 48px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+  color: #212121;
 }
 
 .learn-grid {
-  background: #dfe3e9;
-  border-radius: 14px;
-  padding: 6px;
+  width: min(1200px, 100%);
+  margin: 40px auto 0;
+  background: #ebeef3;
+  border-radius: 10px;
+  padding: 10px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 6px;
+  gap: 10px;
 }
 
 .learn-card {
-  background: #f6f7f9;
+  background: #ffffff;
   border-radius: 10px;
-  padding: 28px 26px 24px;
-  min-height: 222px;
+  padding: 30px;
+  min-height: 295.2px;
   display: flex;
   flex-direction: column;
 }
 
 .learn-icon {
-  width: 44px;
-  height: 44px;
+  width: 60px;
+  height: 60px;
   display: inline-flex;
   color: #55585f;
+  flex: 0 0 60px;
 }
 
 .learn-icon svg {
@@ -473,20 +488,57 @@ body {
   stroke-linejoin: round;
 }
 
+.learn-copy {
+  width: 326.66px;
+  max-width: 100%;
+  margin-top: auto;
+}
+
 .learn-card h3 {
-  margin: 56px 0 10px;
-  font-size: 33px;
-  line-height: 1.12;
-  letter-spacing: -0.03em;
-  color: #303237;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #212121;
+  font-weight: 600;
 }
 
 .learn-card p {
-  margin: 0;
-  font-size: 26px;
-  line-height: 1.32;
-  color: #64686f;
-  font-weight: 500;
+  margin: 13px 0 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555;
+  font-weight: 400;
+}
+
+.learn-floor {
+  width: min(1200px, 100%);
+  height: 92px;
+  margin: 34px auto 0;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: #7f8490;
+  font-size: 14px;
+}
+
+.learn-floor::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to top, rgba(100, 114, 133, 0.08), transparent 74%),
+    repeating-linear-gradient(to right, rgba(116, 125, 141, 0.14) 0 1px, transparent 1px 36px),
+    repeating-linear-gradient(to bottom, rgba(116, 125, 141, 0.1) 0 1px, transparent 1px 24px);
+  transform: perspective(480px) rotateX(68deg);
+  transform-origin: top;
+  opacity: 0.45;
+}
+
+.learn-floor span {
+  position: relative;
+  z-index: 1;
 }
 
 .curriculum-section {
@@ -1518,12 +1570,8 @@ body {
 
 /* Desktop screenshot was captured on a very large canvas */
 @media (max-width: 1500px) {
-  .learn-card h3 {
-    font-size: 31px;
-  }
-
-  .learn-card p {
-    font-size: 24px;
+  .learn-section {
+    padding: 118px 24px 60px;
   }
 
   .module-header h3 {
@@ -1634,33 +1682,61 @@ body {
   }
 
   .learn-section {
-    margin-top: -16px;
-    padding: 86px 0 82px;
+    padding: 90px 20px 56px;
+  }
+
+  .learn-title-wrap {
+    width: 100%;
+    min-height: 0;
+    padding-top: 16px;
   }
 
   .learn-kicker::after {
     display: none;
   }
 
-  .learn-section h2 {
-    margin-bottom: 34px;
+  .learn-title-wrap h2 {
+    font-size: 40px;
+    line-height: 1.15;
   }
 
   .learn-grid {
+    margin-top: 26px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    padding: 8px;
   }
 
   .learn-card {
-    min-height: 180px;
+    min-height: 220px;
+    padding: 24px;
+  }
+
+  .learn-icon {
+    width: 52px;
+    height: 52px;
+    flex-basis: 52px;
+  }
+
+  .learn-copy {
+    width: auto;
+    margin-top: 30px;
   }
 
   .learn-card h3 {
-    margin-top: 24px;
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .learn-card p {
-    font-size: 18px;
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .learn-floor {
+    margin-top: 24px;
+    height: 72px;
+    font-size: 13px;
   }
 
   .curriculum-section {
@@ -1943,46 +2019,66 @@ body {
   }
 
   .learn-section {
-    margin-top: -12px;
-    padding: 70px 0 64px;
+    padding: 70px 10px 54px;
   }
 
   .learn-inner {
-    width: calc(100% - 20px);
+    width: 100%;
+  }
+
+  .learn-title-wrap {
+    width: 100%;
+    min-height: 0;
+    padding-top: 8px;
   }
 
   .learn-kicker {
-    font-size: 13px;
+    font-size: 12px;
   }
 
-  .learn-section h2 {
-    font-size: clamp(1.7rem, 9vw, 2.1rem);
-    margin-bottom: 22px;
+  .learn-title-wrap h2 {
+    margin-top: 6px;
+    font-size: clamp(2.15rem, 10vw, 2.75rem);
+    line-height: 1.2;
   }
 
   .learn-grid {
+    margin-top: 20px;
     grid-template-columns: 1fr;
-    gap: 5px;
-    padding: 5px;
+    gap: 6px;
+    padding: 6px;
   }
 
   .learn-card {
     min-height: auto;
-    padding: 20px 18px 18px;
+    padding: 20px;
   }
 
   .learn-icon {
-    width: 34px;
-    height: 34px;
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
+  }
+
+  .learn-copy {
+    width: auto;
+    margin-top: 20px;
   }
 
   .learn-card h3 {
-    margin-top: 18px;
     font-size: 20px;
   }
 
   .learn-card p {
+    margin-top: 10px;
     font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .learn-floor {
+    margin-top: 18px;
+    height: 58px;
+    font-size: 12px;
   }
 
   .curriculum-section {
