@@ -81,7 +81,6 @@ function Curriculum() {
             <br />
             low-code solutions.
           </h2>
-          <p className="curriculum-kicker">Curriculum overview</p>
         </div>
 
         <div className="curriculum-layout">
