@@ -26,10 +26,6 @@ function Reviews() {
   return (
     <section className="reviews-section">
       <div className="reviews-inner">
-        <p className="reviews-watermark" aria-hidden="true">
-          Reviews
-        </p>
-
         <h2>
           Don&apos;t just take our word for it — see
           <br />

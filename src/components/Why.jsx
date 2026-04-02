@@ -1,3 +1,5 @@
+import { CheckCircle2, CircleX } from 'lucide-react'
+
 const notForYou = [
   'Experienced devs seeking advanced-only topics',
   'Those skipping hands-on practice or 1v1 sessions',
@@ -19,7 +21,6 @@ function Why() {
     <section className="why-section">
       <div className="why-inner">
         <div className="why-heading-wrap">
-          <p className="why-kicker">Check again before enroll!</p>
           <h2>
             Is this
             <br />
@@ -34,7 +35,7 @@ function Why() {
               {notForYou.map((item) => (
                 <li key={item}>
                   <span className="why-mark why-mark-x" aria-hidden="true">
-                    ×
+                    <CircleX />
                   </span>
                   {item}
                 </li>
@@ -48,7 +49,7 @@ function Why() {
               {forYou.map((item) => (
                 <li key={item}>
                   <span className="why-mark why-mark-check" aria-hidden="true">
-                    ✓
+                    <CheckCircle2 />
                   </span>
                   {item}
                 </li>
