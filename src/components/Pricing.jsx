@@ -1,3 +1,5 @@
+import { CheckCircle2 } from 'lucide-react'
+
 const plans = [
   {
     name: 'Basic plan',
@@ -38,7 +40,6 @@ function Pricing() {
             <br />
             & plans
           </h2>
-          <p className="pricing-kicker">Fair price</p>
         </div>
 
         <div className="pricing-box">
@@ -61,7 +62,7 @@ function Pricing() {
                 {leftFeatures.map((item) => (
                   <li key={item}>
                     <span className="feature-check" aria-hidden="true">
-                      ✓
+                      <CheckCircle2 />
                     </span>
                     {item}
                   </li>
@@ -71,7 +72,7 @@ function Pricing() {
                 {rightFeatures.map((item) => (
                   <li key={item}>
                     <span className="feature-check" aria-hidden="true">
-                      ✓
+                      <CheckCircle2 />
                     </span>
                     {item}
                   </li>

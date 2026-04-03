@@ -39,7 +39,6 @@ function Faq() {
             <br />
             from here!
           </h2>
-          <p className="faq-kicker">Any question left?</p>
         </div>
 
         <div className="faq-box">
