@@ -1,3 +1,4 @@
+import { AtSign, Camera, Globe, Mail, Play, X } from 'lucide-react'
 import mentorAvatar from '../assets/mentor-avatar.png'
 
 function Footer() {
@@ -5,15 +6,13 @@ function Footer() {
     <footer className="footer-section">
       <div className="footer-inner">
         <div className="mentor-header">
-          <p className="mentor-kicker">Mentor</p>
-
           <div className="mentor-avatar-wrap">
             <img src={mentorAvatar} alt="Hamira Hoque Mewsi" />
             <a className="mentor-chip mentor-chip-mail" href="#" aria-label="Email mentor">
-              ✉
+              <Mail />
             </a>
             <a className="mentor-chip mentor-chip-linkedin" href="#" aria-label="Mentor LinkedIn">
-              in
+              <AtSign />
             </a>
           </div>
 
@@ -45,16 +44,16 @@ function Footer() {
 
           <div className="footer-socials">
             <a href="#" aria-label="Facebook">
-              f
+              <Globe />
             </a>
             <a href="#" aria-label="X">
-              x
+              <X />
             </a>
             <a href="#" aria-label="Instagram">
-              o
+              <Camera />
             </a>
             <a href="#" aria-label="YouTube">
-              ▷
+              <Play />
             </a>
           </div>
         </div>

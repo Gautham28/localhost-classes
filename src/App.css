@@ -1261,29 +1261,8 @@ body {
   align-items: center;
 }
 
-.mentor-kicker {
-  margin: 0;
-  width: max-content;
-  color: #e6f4ff;
-  font-size: 13px;
-  font-weight: 700;
-  position: relative;
-}
-
-.mentor-kicker::after {
-  content: '';
-  position: absolute;
-  left: calc(100% + 10px);
-  top: -8px;
-  width: 78px;
-  height: 27px;
-  border-top: 2px solid #d8eaff;
-  border-right: 2px solid #d8eaff;
-  border-radius: 0 38px 0 0;
-}
-
 .mentor-avatar-wrap {
-  margin-top: 14px;
+  margin-top: 0;
   width: 220px;
   height: 220px;
   border-radius: 50%;
@@ -1311,10 +1290,14 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
-  font-weight: 800;
   text-decoration: none;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.mentor-chip svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2.2;
 }
 
 .mentor-chip-mail {
@@ -1323,7 +1306,6 @@ body {
 
 .mentor-chip-linkedin {
   right: -16px;
-  font-size: 13px;
 }
 
 .mentor-name {
@@ -1427,10 +1409,19 @@ body {
 .footer-socials a {
   text-decoration: none;
   color: #f2f7fc;
-  font-size: 22px;
-  font-weight: 700;
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   line-height: 1;
   opacity: 0.96;
+}
+
+.footer-socials a svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2.2;
 }
 
 .footer-clouds {
@@ -1756,10 +1747,6 @@ body {
 
   .footer-section {
     padding: 62px 0 116px;
-  }
-
-  .mentor-kicker::after {
-    display: none;
   }
 
   .mentor-avatar-wrap {
@@ -2233,10 +2220,6 @@ body {
     width: calc(100% - 20px);
   }
 
-  .mentor-kicker {
-    font-size: 12px;
-  }
-
   .mentor-avatar-wrap {
     margin-top: 10px;
     width: 136px;
@@ -2246,7 +2229,11 @@ body {
   .mentor-chip {
     width: 27px;
     height: 27px;
-    font-size: 13px;
+  }
+
+  .mentor-chip svg {
+    width: 14px;
+    height: 14px;
   }
 
   .mentor-chip-mail {
@@ -2255,7 +2242,6 @@ body {
 
   .mentor-chip-linkedin {
     right: -12px;
-    font-size: 11px;
   }
 
   .mentor-name {
@@ -2315,7 +2301,13 @@ body {
   }
 
   .footer-socials a {
-    font-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer-socials a svg {
+    width: 16px;
+    height: 16px;
   }
 
   .footer-clouds {
