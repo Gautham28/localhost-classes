@@ -1,32 +1,32 @@
 const learnCards = [
   {
-    title: 'Website still looks dull?',
-    text: 'Upgrade your design to attract clients and boost credibility instantly.',
+    title: 'HTML Fundamentals',
+    text: 'Learn how to structure beautiful web pages using proper HTML5 and semantic tags.',
     icon: 'stress',
   },
   {
-    title: 'Website traffic but no results?',
-    text: 'Turn visitors into customers with high-converting design and strategy.',
+    title: 'Modern CSS Styling',
+    text: 'Create stunning designs with colors, fonts, animations, Flexbox, and responsive layouts.',
     icon: 'chart',
   },
   {
-    title: 'How can I pick inspiration?',
-    text: 'Unlock sources and techniques to fuel your next great project.',
+    title: 'JavaScript Interactivity',
+    text: 'Make websites come alive - add buttons, quizzes, animations, and dynamic content.',
     icon: 'search',
   },
   {
-    title: 'Stuck at the very first step?',
-    text: 'Get guidance and actionable steps to launch your project confidently.',
+    title: 'Git & GitHub Workflow',
+    text: 'Learn real developer skills - version control, collaboration, and deploying websites live on the internet.',
     icon: 'stairs',
   },
   {
-    title: 'Struggling in support?',
-    text: 'Get 1v1 mentorship and guidance whenever you need it most.',
+    title: '4 Real Portfolio Projects',
+    text: 'Build and deploy 4 complete projects: Personal Portfolio, Quiz Game, Goa Tourism Page, and Smart To-Do List App.',
     icon: 'support',
   },
   {
-    title: 'Want a dedicated mentor?',
-    text: 'Unlock personalized attention and step-by-step support for faster growth.',
+    title: 'Professional Portfolio + Confidence',
+    text: 'End with a strong GitHub portfolio + certificate that your child can proudly show to teachers and friends.',
     icon: 'mentor',
   },
 ]
@@ -112,9 +112,7 @@ function Learn() {
       <div className="learn-inner">
         <div className="learn-title-wrap">
           <h2>
-            Struggling to understand
-            <br />
-            where to start or how to grow?
+            What You Will learn
           </h2>
         </div>
 

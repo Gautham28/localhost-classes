@@ -1,23 +1,23 @@
 const reviews = [
   {
     stars: 5,
-    text: 'Personalized guidance ensured I was always moving forward, progressing faster than I ever thought. A true game-changer.',
-    name: 'Erika Austin',
-    role: 'Developer',
+    text: 'My son built his own website in 6 weeks! He is so proud and confident now. The projects were actually fun.',
+    name: 'Priya Sharma',
+    role: 'Mother of Aarav (Class 9)',
     avatarClass: 'avatar-erika',
   },
   {
     stars: 5,
-    text: 'His teaching style is simple and incredibly boosting. He broke down complex concepts into easy steps, making them approachable.',
-    name: 'Daisy Boylan',
-    role: 'Designer',
+    text: 'Best decision! The small batch meant personal attention. My daughter loved making the quiz game.',
+    name: 'Rohan Patil',
+    role: 'Father of Ananya (Class 10)',
     avatarClass: 'avatar-daisy',
   },
   {
-    stars: 4,
-    text: 'I was stuck for months trying to figure out low-code tools on my own but this made everything crystal clear. Each session was actionable.',
-    name: 'Annalee Jackson',
-    role: 'Head of idea',
+    stars: 5,
+    text: 'Teaching style is very patient and clear. My child looks forward to every Saturday & Sunday class.',
+    name: 'Sneha Khan',
+    role: 'Mother of Vihaan (Class 8)',
     avatarClass: 'avatar-annalee',
   },
 ]
@@ -27,11 +27,9 @@ function Reviews() {
     <section className="reviews-section">
       <div className="reviews-inner">
         <h2>
-          Don&apos;t just take our word for it — see
+          Don&apos;t just take our word for it, see
           <br />
-          what our clients have to say about their
-          <br />
-          Voltiz experience.
+          what parents & students say.
         </h2>
 
         <div className="review-cards">

@@ -1,19 +1,18 @@
 import { CheckCircle2, CircleX } from 'lucide-react'
 
 const notForYou = [
-  'Experienced devs seeking advanced-only topics',
-  'Those skipping hands-on practice or 1v1 sessions',
-  'People wanting fully self-paced, no mentorship',
-  'Learners only seeking theory, no real application',
-  'Not applying lessons to actual projects',
+  'Your child is looking for only advanced topics (this is beginner-friendly)',
+  'You want fully self-paced with no live classes',
+  'Your child prefers only theory without projects',
+  'You want completely free resources only',
 ]
 
 const forYou = [
-  'Beginners wanting clear low-code guidance',
-  'Freelancers/designers building websites fast',
-  'Founders needing practical project guidance',
-  'Struggling with starting or workflows',
-  'Want personalized feedback & support',
+  'Your child is a complete beginner and wants clear guidance',
+  'You want fun, project-based learning with real results',
+  'Your child needs small batch personal attention',
+  'You want them to build a professional GitHub portfolio',
+  'You want live interactive classes + recordings',
 ]
 
 function Why() {
@@ -22,9 +21,7 @@ function Why() {
       <div className="why-inner">
         <div className="why-heading-wrap">
           <h2>
-            Is this
-            <br />
-            for you?
+            Is this course for your child?
           </h2>
         </div>
 

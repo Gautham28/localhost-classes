@@ -5,63 +5,64 @@ const modules = [
   {
     week: 'Week 01',
     module: 'Module 01',
-    title: 'Fundamentals of modern web design',
+    title: 'HTML Fundamentals',
     rows: [
-      'Identify: Find the purpose of the page or project',
-      'Listing: List all sections, content types, and key elements',
-      'Styling: Decide which modern style aligns with your brand & project.',
-      'Solution: Define spacing, padding, and margins consistently.',
+      'Understanding how websites work',
+      'Building structure with semantic HTML',
+      'Forms, images, links & lists',
     ],
-    extra:
-      'Design the visual system including colors, typography, spacing, grids, and reusable components for consistency.',
-    lorem:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    linkLabel: 'Contact Me',
   },
   {
     week: 'Week 02',
-    module: 'Module 3.2',
-    title: 'Build complex layouts',
+    module: 'Module 02',
+    title: 'CSS Styling & Layouts',
     rows: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      'Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
-      'Duis aute irure dolor in reprehenderit in voluptate velit.',
+      'Colors, fonts, animations & hover effects',
+      'Flexbox for modern layouts',
+      'Making websites responsive (mobile-friendly)',
     ],
-    extra:
-      'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    lorem:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     week: 'Week 03',
-    module: 'Module 05',
-    title: 'Incorporate modern design features',
+    module: 'Module 03',
+    title: 'First Major Project',
     rows: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      'Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
-      'Duis aute irure dolor in reprehenderit in voluptate velit.',
+      'Build a Personal Portfolio Website',
+      'Combine HTML + CSS to create something beautiful',
     ],
-    extra:
-      'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    lorem:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     week: 'Week 04',
-    module: 'Module 07',
-    title: 'Optimize responsiveness',
+    module: 'Module 04',
+    title: 'JavaScript Basics',
     rows: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      'Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
-      'Duis aute irure dolor in reprehenderit in voluptate velit.',
+      'Making websites interactive',
+      'Buttons, events & DOM manipulation',
     ],
-    extra:
-      'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    lorem:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
+  {
+    week: 'Week 05',
+    module: 'Module 05',
+    title: 'Interactive Projects',
+    rows: ['Build a Fun Quiz Game with scoring'],
+  },
+  {
+    week: 'Week 06',
+    module: 'Module 06',
+    title: 'Git & GitHub',
+    rows: ['Professional developer workflow', 'Pushing code and deploying live websites'],
+  },
+  {
+    week: 'Week 07',
+    module: 'Module 07',
+    title: 'Advanced Interactivity',
+    rows: ['Build a Smart To-Do List App with local storage'],
+  },
+  {
+    week: 'Week 08',
+    module: 'Module 08',
+    title: 'Final Polish & Showcase',
+    rows: ['Deploy all 4 projects', 'Student showcase + portfolio review'],
   },
 ]
 
@@ -77,9 +78,9 @@ function Curriculum() {
       <div className="curriculum-inner">
         <div className="curriculum-heading">
           <h2>
-            Crack the code to elite
+            Crack the code to build real websites
             <br />
-            low-code solutions.
+            with confidence.
           </h2>
         </div>
 
@@ -122,9 +123,6 @@ function Curriculum() {
                           <span>{`0${rowIndex + 1}`}</span>
                         </div>
                       ))}
-                      <p className="module-extra">{item.extra}</p>
-                      <p className="module-lorem">{item.lorem}</p>
-                      {item.linkLabel && <a href="#">{item.linkLabel}</a>}
                     </div>
                   )}
                 </article>

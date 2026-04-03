@@ -2,33 +2,39 @@ import { CheckCircle2 } from 'lucide-react'
 
 const plans = [
   {
-    name: 'Basic plan',
-    subtitle: 'Build your low-code foundation',
-    price: 399,
+    name: 'Starter',
+    subtitle: '4 Weeks • HTML + CSS Basics • 2 Simple Projects • Live classes + Recordings',
+    price: '₹2,000',
     selected: false,
   },
   {
-    name: 'Advance plan',
-    subtitle: 'Enterprise-grade low-code systems',
-    price: 499,
+    name: 'Complete (Most Popular)',
+    subtitle:
+      'Full 8 Weeks • HTML, CSS, JavaScript + GitHub • 4 Live Projects + Deployment • Certificate + Portfolio • Doubt Support',
+    price: '₹4,000',
     selected: true,
   },
   {
-    name: 'Corporate plan',
-    subtitle: 'Powerful low-code solutions',
-    price: 999,
+    name: 'Pro',
+    subtitle:
+      'Everything in Complete • 1:1 Portfolio Review Session • Priority Doubt Clearing • Extra Feedback + Polish',
+    price: '₹5,500',
     selected: false,
   },
 ]
 
 const leftFeatures = [
-  'Advanced Low-code topics',
-  'Community learning access',
-  'Guided beginner lessons',
-  'Ready-made core templates',
+  'Full 8-week live program',
+  'Project-based learning approach',
+  'Small batches and personal attention',
+  'Portfolio-ready GitHub projects',
 ]
 
-const rightFeatures = ['Certification included', 'Custom project review', 'Email support']
+const rightFeatures = [
+  'Live classes + recordings',
+  'Certificate on completion',
+  'Dedicated doubt support',
+]
 
 function Pricing() {
   return (
@@ -36,9 +42,9 @@ function Pricing() {
       <div className="pricing-inner">
         <div className="pricing-heading">
           <h2>
-            Competitive price
+            Choose the right plan
             <br />
-            & plans
+            for your child
           </h2>
         </div>
 
@@ -50,8 +56,11 @@ function Pricing() {
                 <div className="plan-meta">
                   <h3>{plan.name}</h3>
                   <p>{plan.subtitle}</p>
+                  <button className="plan-enroll" type="button">
+                    Enroll Now
+                  </button>
                 </div>
-                <p className="plan-price">{`$${plan.price}`}</p>
+                <p className="plan-price">{plan.price}</p>
               </article>
             ))}
           </div>
@@ -81,7 +90,7 @@ function Pricing() {
             </div>
 
             <div className="pricing-note-row">
-              <p>Not sure? Try Pro Plan free for 7 days! No credit card required.</p>
+              <p>Pick the plan that best fits your child&apos;s learning pace and goals.</p>
               <button type="button">Enroll Now</button>
             </div>
           </div>
@@ -90,15 +99,15 @@ function Pricing() {
         <div className="pricing-trust">
           <p>
             <span aria-hidden="true">◉</span>
-            On-time file delivery
+            Beginner friendly
           </p>
           <p>
             <span aria-hidden="true">◍</span>
-            Providing security solutions
+            Live mentorship support
           </p>
           <p>
             <span aria-hidden="true">◎</span>
-            24/7 online support
+            Project-based outcomes
           </p>
         </div>
       </div>
