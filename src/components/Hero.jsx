@@ -57,25 +57,8 @@ function Hero() {
       </div>
 
       <div className="hero-media" aria-hidden="true">
-        <div className="review-badge">
-          <div className="badge-avatars">
-            <span />
-            <span />
-            <span />
-          </div>
-          <div className="badge-copy">
-            <p className="stars">★★★★★ 4.9</p>
-            <p>Based on 2,169 reviews</p>
-          </div>
-        </div>
-
         <div className="media-card">
           <img src={heroCard} alt="Student working on a laptop" />
-        </div>
-
-        <div className="hero-cubes">
-          <span className="cube cube-main" />
-          <span className="cube cube-side" />
         </div>
       </div>
 
