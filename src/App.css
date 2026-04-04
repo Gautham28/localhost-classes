@@ -267,13 +267,13 @@ body {
 }
 
 .hero-subheadline {
-  margin: 2px 0 0;
+  margin: 32px 0 0;
   width: 860px;
   max-width: 100%;
   color: rgba(241, 248, 255, 0.96);
   font-size: 20px;
   line-height: 1.45;
-  font-weight: 500;
+  font-weight: 200;
 }
 
 .hero-media {

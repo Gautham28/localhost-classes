@@ -29,7 +29,7 @@ function Hero() {
           <h1>
             <span className="hero-line">Master Web Development to</span>
             <span className="hero-line">
-              <span className="heading-highlight">Create Beautiful & Interactive</span>
+              Create <span className="heading-highlight">Beautiful & Interactive</span>
             </span>
             <span className="hero-line">Websites</span>
           </h1>
