@@ -663,7 +663,7 @@ body {
 .reviews-section {
   position: relative;
   overflow: hidden;
-  padding: 100px 0 92px;
+  padding: 92px 0;
   background: #1f2023;
   color: #f5f6f7;
 }
@@ -691,7 +691,7 @@ body {
 .reviews-inner h2 {
   width: 871px;
   max-width: 100%;
-  margin: 122px auto 0;
+  margin: 0 auto;
   text-align: center;
   font-size: 48px;
   line-height: 1.2;
@@ -743,47 +743,15 @@ body {
 .review-user {
   margin-top: auto;
   display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.review-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-  display: inline-block;
-}
-
-.avatar-erika {
-  background:
-    radial-gradient(circle at 65% 37%, #d6aa8f 0 17%, transparent 18%),
-    radial-gradient(circle at 48% 39%, #f6dcc8 0 23%, transparent 24%),
-    radial-gradient(circle at 48% 70%, #1c1f27 0 36%, transparent 37%),
-    linear-gradient(140deg, #f3e4d7 0%, #c0b6a8 100%);
-}
-
-.avatar-daisy {
-  background:
-    radial-gradient(circle at 58% 37%, #e8b18c 0 16%, transparent 17%),
-    radial-gradient(circle at 50% 42%, #f3d7be 0 24%, transparent 25%),
-    radial-gradient(circle at 42% 29%, #b6784d 0 25%, transparent 26%),
-    linear-gradient(140deg, #3e7242 0%, #8ab386 45%, #dad3c3 100%);
-}
-
-.avatar-annalee {
-  background:
-    radial-gradient(circle at 54% 41%, #8d593e 0 17%, transparent 18%),
-    radial-gradient(circle at 49% 44%, #c78967 0 23%, transparent 24%),
-    radial-gradient(circle at 42% 35%, #2c1e19 0 25%, transparent 26%),
-    linear-gradient(140deg, #1c2833 0%, #4a392f 45%, #233521 100%);
+  align-items: flex-start;
 }
 
 .review-name {
   margin: 0;
   color: #212121;
-  font-size: 35px;
+  font-size: 20px;
   line-height: 1;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: -0.02em;
 }
 
