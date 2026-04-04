@@ -931,6 +931,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 7px;
+  height: 100%;
 }
 
 .plan-item {
@@ -942,11 +943,19 @@ body {
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
   gap: 14px;
+  cursor: pointer;
+  flex: 1;
 }
 
 .plan-item-selected {
   background: #1f2126;
   border-color: #2b2e34;
+}
+
+.plan-radio-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .plan-radio {
@@ -978,32 +987,9 @@ body {
   font-weight: 600;
 }
 
-.plan-enroll {
-  margin-top: 10px;
-  border: 0;
-  border-radius: 8px;
-  background: #212121;
-  color: #ffffff;
-  height: 34px;
-  padding: 0 14px;
-  font-size: 13px;
-  font-weight: 600;
-  font-family: 'Funnel Display', sans-serif;
-  cursor: pointer;
-}
-
 .plan-item-selected .plan-meta h3,
 .plan-item-selected .plan-price {
   color: #f5f6f8;
-}
-
-.plan-item-selected .plan-meta p {
-  color: #b4b8c0;
-}
-
-.plan-item-selected .plan-enroll {
-  background: #f5f6f8;
-  color: #1f2126;
 }
 
 .plan-price {
