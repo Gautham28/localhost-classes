@@ -27,9 +27,11 @@ function Hero() {
       <div className="hero-content">
         <div className="hero-title-list">
           <h1>
-            Master <span className="hero-soft">Web Development</span> to Create
-            <br />
-            <span className="heading-highlight">Beautiful & Interactive</span> Websites
+            <span className="hero-line">Master Web Development to</span>
+            <span className="hero-line">
+              <span className="heading-highlight">Create Beautiful & Interactive</span>
+            </span>
+            <span className="hero-line">Websites</span>
           </h1>
 
           <ul className="hero-points">
@@ -77,7 +79,6 @@ function Hero() {
         </div>
       </div>
 
-      <div className="cloud-layer" />
     </section>
   )
 }

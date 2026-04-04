@@ -59,7 +59,6 @@ function Footer() {
         </div>
       </div>
 
-      <div className="footer-clouds" />
     </footer>
   )
 }
