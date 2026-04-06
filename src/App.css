@@ -1189,6 +1189,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 600;
+  white-space: pre-line;
 }
 
 .footer-section {

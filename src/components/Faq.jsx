@@ -2,24 +2,44 @@ import { useState } from 'react'
 
 const faqItems = [
   {
-    question: 'Are programs detailed with key info?',
+    question: 'Who is this course for?',
     answer:
-      'This mentorship is perfect for beginners, designers, freelancers, and founders who want to master low-code tools quickly. If you want direction, confidence, accountability, and real results — this is built for you.',
+      'This course is perfect for anyone who want to learn practical web development. It is beginner-friendly, no prior coding experience is needed.',
   },
   {
-    question: 'Is contact/support information visible?',
+    question: 'What will I actually learn?',
     answer:
-      'Yes. You will get direct contact details and support channels so you can ask questions and stay unblocked throughout the program.',
+      'Your child will learn HTML, CSS, JavaScript, Git & GitHub, and how to deploy live websites. By the end of 8 weeks, they will have built and deployed 4 real projects — a Personal Portfolio, Interactive Quiz Game, Goa Tourism Landing Page, and a Smart To-Do List App.',
   },
   {
-    question: 'Does it follow accessibility standards?',
+    question: 'Do I need to buy any software or tools?',
     answer:
-      'The training follows clear design principles that prioritize readability, structure, and usability so projects are easier for all users to navigate.',
+      'No. Everything is completely free.\n• A laptop/desktop\n• Stable internet connection\n• VS Code (free editor)',
   },
   {
-    question: 'Is the navigation simple and clear?',
+    question: 'What is the class schedule?',
     answer:
-      'Absolutely. We focus on straightforward site architecture and intuitive navigation patterns users can understand in seconds.',
+      'Classes are held twice a week:\n• Every Saturday and Sunday\n• Duration: 75–90 minutes per class\n• Timings will be decided based on the batch (evening slots preferred)',
+  },
+  {
+    question: 'What if my child misses a class?',
+    answer:
+      'All classes are recorded and shared with students. They can watch the recording anytime and still complete the projects.',
+  },
+  {
+    question: 'How big is the batch?',
+    answer:
+      'We keep batches small (maximum 10–15 students) so every child gets personal attention and doubt clearing.',
+  },
+  {
+    question: 'Will my child get a certificate?',
+    answer:
+      'Yes. Every student receives a Course Completion Certificate along with their own GitHub portfolio link containing 4 live projects.',
+  },
+  {
+    question: 'What is the refund policy?',
+    answer:
+      'Full refund is available if requested before the second class. After that, refunds are case-by-case.',
   },
 ]
 
