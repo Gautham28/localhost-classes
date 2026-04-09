@@ -1,8 +1,8 @@
 const navItems = [
   { label: 'Home', href: '#', active: true },
-  { label: 'Curriculum', href: '#', active: false },
-  { label: 'Essentials', href: '#', active: false, hasCaret: true },
-  { label: 'Contact', href: '#', active: false },
+  { label: 'Curicullum', href: '#', active: false },
+  { label: 'Reviews', href: '#', active: false },
+  { label: 'FAQ', href: '#', active: false },
 ]
 
 function Navbar() {
