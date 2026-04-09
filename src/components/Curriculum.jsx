@@ -74,7 +74,7 @@ function Curriculum() {
   }
 
   return (
-    <section className="curriculum-section" id="curriculum">
+    <section className="curriculum-section" id="curicullum">
       <div className="curriculum-inner">
         <div className="curriculum-heading">
           <h2>

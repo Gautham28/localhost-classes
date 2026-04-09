@@ -1,15 +1,15 @@
 const navItems = [
-  { label: 'Home', href: '#', active: true },
-  { label: 'Curicullum', href: '#', active: false },
-  { label: 'Reviews', href: '#', active: false },
-  { label: 'FAQ', href: '#', active: false },
+  { label: 'Home', href: '#home', active: true },
+  { label: 'Curicullum', href: '#curicullum', active: false },
+  { label: 'Reviews', href: '#reviews', active: false },
+  { label: 'FAQ', href: '#faq', active: false },
 ]
 
 function Navbar() {
   return (
     <header className="navbar-shell">
       <nav className="navbar">
-        <a className="brand" href="#" aria-label="Localhost Classes home">
+        <a className="brand" href="#home" aria-label="Localhost Classes home">
           <img src="/localhostclasseslogo.png" alt="Localhost Classes" />
         </a>
 

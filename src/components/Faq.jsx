@@ -51,7 +51,7 @@ function Faq() {
   }
 
   return (
-    <section className="faq-section">
+    <section className="faq-section" id="faq">
       <div className="faq-inner">
         <div className="faq-heading">
           <h2>

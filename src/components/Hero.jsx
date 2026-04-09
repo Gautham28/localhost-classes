@@ -23,7 +23,7 @@ function PointIcon() {
 
 function Hero() {
   return (
-    <section className="hero-section">
+    <section className="hero-section" id="home">
       <div className="hero-content">
         <div className="hero-title-list">
           <h1>
