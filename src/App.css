@@ -893,7 +893,7 @@ body {
 }
 
 .pricing-section {
-  padding: 84px 0 96px;
+  padding: 104px 0 116px;
   background: #f3f4f6;
   color: #1f2126;
 }
@@ -917,20 +917,20 @@ body {
 }
 
 .pricing-box {
-  margin-top: 44px;
+  margin-top: 56px;
   border: 1px solid #d9dde5;
   border-radius: 13px;
   background: #e7ebf1;
-  padding: 7px;
+  padding: 10px;
   display: grid;
   grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
-  gap: 7px;
+  gap: 10px;
 }
 
 .plan-list {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 10px;
   height: 100%;
 }
 
@@ -938,7 +938,7 @@ body {
   border-radius: 10px;
   border: 1px solid #e0e3e9;
   background: #f8f8f9;
-  padding: 18px 24px;
+  padding: 22px 26px;
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
@@ -1005,17 +1005,17 @@ body {
   border-radius: 10px;
   border: 1px solid #e0e3e9;
   background: #f8f8f9;
-  padding: 32px 34px 28px;
+  padding: 38px 40px 34px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 28px;
+  gap: 34px;
 }
 
 .feature-columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px 28px;
+  gap: 22px 34px;
 }
 
 .feature-columns ul {
@@ -1024,7 +1024,7 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
 }
 
 .feature-columns li {
@@ -1057,7 +1057,7 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 24px;
+  gap: 32px;
 }
 
 .pricing-note-row p {
@@ -1082,7 +1082,7 @@ body {
 }
 
 .pricing-trust {
-  margin-top: 32px;
+  margin-top: 42px;
   display: flex;
   justify-content: center;
   align-items: center;
