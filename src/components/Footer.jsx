@@ -1,4 +1,5 @@
-import { AtSign, Camera, Globe, Mail, Play, X } from 'lucide-react'
+import { AtSign, Camera, Globe, Mail, Phone, Play, Twitter, X, Youtube } from 'lucide-react'
+import Instagram from 'lucide-react/dist/esm/icons/instagram.js'
 import mentorAvatar from '../assets/mentor-avatar.png'
 
 function Footer() {
@@ -7,7 +8,7 @@ function Footer() {
       <div className="footer-inner">
         <div className="mentor-header">
           <div className="mentor-avatar-wrap">
-            <img src={mentorAvatar} alt="Hamira Hoque Mewsi" />
+            <img src={mentorAvatar} alt="Gautham Krishna" />
             <a className="mentor-chip mentor-chip-mail" href="#" aria-label="Email mentor">
               <Mail />
             </a>
@@ -16,27 +17,32 @@ function Footer() {
             </a>
           </div>
 
-          <p className="mentor-name">Hamira Hoque Mewsi</p>
+          <p className="mentor-name">Gautham Krishna</p>
         </div>
 
-        <h2>
-          Meet the mentor
-          <br />
-          behind your low-code
-          <br />
-          mastery journey
-        </h2>
+        <h2>Meet the mentor</h2>
 
         <form className="footer-subscribe" onSubmit={(event) => event.preventDefault()}>
           <input type="email" placeholder="Your email..." aria-label="Email address" />
           <button type="submit">Subscribe</button>
         </form>
 
-        <div className="footer-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">T & C</a>
-          <a href="#">Refund Policy</a>
-          <a href="#">404</a>
+        <div className="footer-links footer-links--icons" aria-label="Social and contact links">
+          <a href="#" aria-label="Instagram">
+            <Instagram />
+          </a>
+          <a href="#" aria-label="Email">
+            <Mail />
+          </a>
+          <a href="#" aria-label="Phone">
+            <Phone />
+          </a>
+          <a href="#" aria-label="YouTube">
+            <Youtube />
+          </a>
+          <a href="#" aria-label="Twitter">
+            <Twitter />
+          </a>
         </div>
 
         <div className="footer-bottom">
