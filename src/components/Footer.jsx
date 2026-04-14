@@ -1,4 +1,4 @@
-import { AtSign, Camera, Globe, Mail, Phone, Play, Twitter, X, Youtube } from 'lucide-react'
+import { AtSign, Mail, Phone, Twitter, Youtube } from 'lucide-react'
 import Instagram from 'lucide-react/dist/esm/icons/instagram.js'
 import mentorAvatar from '../assets/mentor-avatar.png'
 
@@ -46,22 +46,7 @@ function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>Copyright & design by @templatemunk - 2026</p>
-
-          <div className="footer-socials">
-            <a href="#" aria-label="Facebook">
-              <Globe />
-            </a>
-            <a href="#" aria-label="X">
-              <X />
-            </a>
-            <a href="#" aria-label="Instagram">
-              <Camera />
-            </a>
-            <a href="#" aria-label="YouTube">
-              <Play />
-            </a>
-          </div>
+          <p>localhost classes</p>
         </div>
       </div>
 
