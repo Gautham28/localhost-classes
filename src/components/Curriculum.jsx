@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import curriculumPhoto from '../assets/curriculum-left.png'
 
 const modules = [
   {
@@ -85,10 +84,6 @@ function Curriculum() {
         </div>
 
         <div className="curriculum-layout">
-          <div className="curriculum-photo-card">
-            <img src={curriculumPhoto} alt="Student working on laptop" />
-          </div>
-
           <div className="curriculum-panels">
             {modules.map((item, index) => {
               const isOpen = openIndex === index

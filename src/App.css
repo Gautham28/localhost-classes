@@ -515,33 +515,11 @@ body {
 
 .curriculum-layout {
   margin-top: 22px;
-  display: grid;
-  grid-template-columns: 550px 610px;
-  gap: 40px;
-  align-items: stretch;
-}
-
-.curriculum-photo-card {
-  width: 550px;
-  max-width: 100%;
-  height: 100%;
-  background: #ded7cc;
-  border-radius: 8px;
-  overflow: hidden;
-  border: 1px solid #dbdde4;
-}
-
-.curriculum-photo-card img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-  display: block;
 }
 
 .curriculum-panels {
-  width: 610px;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   border: 1px solid #d8dbe3;
   border-radius: 10px;
@@ -1581,22 +1559,6 @@ body {
 
   .curriculum-layout {
     margin-top: 24px;
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .curriculum-photo-card {
-    width: min(550px, 100%);
-    height: auto;
-    aspect-ratio: 11 / 12;
-  }
-
-  .curriculum-photo-card img {
-    height: 100%;
-  }
-
-  .curriculum-panels {
-    width: 100%;
   }
 
   .module-header h3 {
@@ -1894,16 +1856,6 @@ body {
 
   .curriculum-layout {
     margin-top: 18px;
-  }
-
-  .curriculum-photo-card {
-    width: 100%;
-    max-height: none;
-  }
-
-  .curriculum-photo-card img {
-    width: 100%;
-    height: 100%;
   }
 
   .curriculum-panels {
