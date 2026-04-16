@@ -21,7 +21,7 @@ function PointIcon() {
   )
 }
 
-function Hero() {
+function Hero({ onEnrollClick }) {
   return (
     <section className="hero-section" id="home">
       <div className="hero-content">
@@ -51,7 +51,7 @@ function Hero() {
           school kids (8th-12th).
         </p>
 
-        <button className="hero-cta" type="button">
+        <button className="hero-cta" type="button" onClick={onEnrollClick}>
           Enroll Now
         </button>
       </div>

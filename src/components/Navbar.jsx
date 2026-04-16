@@ -5,7 +5,7 @@ const navItems = [
   { label: 'FAQ', href: '#faq', active: false },
 ]
 
-function Navbar() {
+function Navbar({ onEnrollClick }) {
   return (
     <header className="navbar-shell">
       <nav className="navbar">
@@ -24,7 +24,7 @@ function Navbar() {
           ))}
         </ul>
 
-        <button className="enroll-btn" type="button">
+        <button className="enroll-btn" type="button" onClick={onEnrollClick}>
           Enroll Today
         </button>
       </nav>
