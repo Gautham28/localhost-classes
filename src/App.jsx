@@ -73,7 +73,9 @@ function App() {
             <form className="enroll-form" onSubmit={handleSubmit}>
               <div className="enroll-form-column">
                 <label>
-                  Student Name
+                  <span className="enroll-form-label-text">
+                    Student Name <span className="required-indicator">*</span>
+                  </span>
                   <input
                     type="text"
                     name="studentName"
@@ -84,7 +86,7 @@ function App() {
                 </label>
 
                 <label>
-                  Student Number
+                  <span className="enroll-form-label-text">Student Number</span>
                   <input
                     type="tel"
                     name="studentNumber"
@@ -94,7 +96,7 @@ function App() {
                 </label>
 
                 <label>
-                  Student Class
+                  <span className="enroll-form-label-text">Student Class</span>
                   <input
                     type="text"
                     name="studentClass"
@@ -106,7 +108,9 @@ function App() {
 
               <div className="enroll-form-column">
                 <label>
-                  Parent Name
+                  <span className="enroll-form-label-text">
+                    Parent Name <span className="required-indicator">*</span>
+                  </span>
                   <input
                     type="text"
                     name="parentName"
@@ -117,7 +121,9 @@ function App() {
                 </label>
 
                 <label>
-                  Parent WhatsApp Number
+                  <span className="enroll-form-label-text">
+                    Parent WhatsApp Number <span className="required-indicator">*</span>
+                  </span>
                   <input
                     type="tel"
                     name="parentWhatsapp"
@@ -129,7 +135,9 @@ function App() {
               </div>
 
               <label className="enroll-form-full">
-                Selected Pricing
+                <span className="enroll-form-label-text">
+                  Selected Pricing <span className="required-indicator">*</span>
+                </span>
                 <select name="pricingPlan" value={formData.pricingPlan} onChange={handleInputChange} required>
                   <option value="Starter">Starter - ₹2,000</option>
                   <option value="Complete (Most Popular)">Complete (Most Popular) - ₹4,000</option>

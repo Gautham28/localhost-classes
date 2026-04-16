@@ -1154,6 +1154,17 @@ body {
   font-weight: 600;
 }
 
+.enroll-form-label-text {
+  display: inline-flex;
+  align-items: center;
+}
+
+.required-indicator {
+  color: #d14b4b;
+  margin-left: 4px;
+  line-height: 1;
+}
+
 .enroll-form input,
 .enroll-form select {
   width: 100%;
