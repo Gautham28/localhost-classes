@@ -1083,6 +1083,108 @@ body {
   line-height: 1;
 }
 
+.enroll-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: rgba(20, 24, 32, 0.58);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.enroll-modal {
+  width: min(680px, 100%);
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  border: 1px solid #d9dde5;
+  border-radius: 14px;
+  background: #f8f8f9;
+  box-shadow: 0 26px 56px rgba(9, 12, 18, 0.3);
+  padding: 26px;
+}
+
+.enroll-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.enroll-modal-header h3 {
+  margin: 0;
+  font-size: clamp(1.7rem, 2.4vw, 2.1rem);
+  line-height: 1.05;
+  color: #1f2228;
+  letter-spacing: -0.02em;
+}
+
+.enroll-modal-header button {
+  border: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #1f2126;
+  color: #f5f6f8;
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.enroll-form {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.enroll-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #4a4f57;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.enroll-form input,
+.enroll-form select {
+  width: 100%;
+  min-height: 50px;
+  border: 1px solid #d9dde5;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #2c3038;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 14px;
+  outline: none;
+}
+
+.enroll-form input:focus,
+.enroll-form select:focus {
+  border-color: #7e96b5;
+  box-shadow: 0 0 0 3px rgba(126, 150, 181, 0.2);
+}
+
+.enroll-form label:last-of-type {
+  grid-column: 1 / -1;
+}
+
+.enroll-form button {
+  grid-column: 1 / -1;
+  margin-top: 4px;
+  border: 0;
+  border-radius: 12px;
+  background: #1f2126;
+  color: #f5f6f8;
+  min-height: 56px;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 .faq-section {
   padding: 82px 0 98px;
   background: #f3f4f6;
@@ -2051,6 +2153,46 @@ body {
 
   .pricing-trust span {
     font-size: 14px;
+  }
+
+  .enroll-modal-backdrop {
+    padding: 12px;
+  }
+
+  .enroll-modal {
+    max-height: calc(100vh - 24px);
+    padding: 16px 14px;
+    border-radius: 11px;
+  }
+
+  .enroll-modal-header h3 {
+    font-size: 1.35rem;
+  }
+
+  .enroll-modal-header button {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    font-size: 26px;
+  }
+
+  .enroll-form {
+    margin-top: 16px;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .enroll-form input,
+  .enroll-form select {
+    min-height: 44px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+
+  .enroll-form button {
+    min-height: 46px;
+    border-radius: 10px;
+    font-size: 18px;
   }
 
   .faq-section {

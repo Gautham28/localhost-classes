@@ -32,7 +32,40 @@ const plans = [
 
 function Pricing() {
   const [selectedPlan, setSelectedPlan] = useState(plans[1].name)
+  const [isEnrollFormOpen, setIsEnrollFormOpen] = useState(false)
+  const [formData, setFormData] = useState({
+    studentName: '',
+    studentNumber: '',
+    parentName: '',
+    parentWhatsapp: '',
+    studentSchool: '',
+    pricingPlan: plans[1].name,
+  })
   const activePlan = plans.find((plan) => plan.name === selectedPlan) ?? plans[1]
+
+  const handlePlanChange = (planName) => {
+    setSelectedPlan(planName)
+    setFormData((prev) => ({ ...prev, pricingPlan: planName }))
+  }
+
+  const openEnrollForm = () => {
+    setFormData((prev) => ({ ...prev, pricingPlan: selectedPlan }))
+    setIsEnrollFormOpen(true)
+  }
+
+  const closeEnrollForm = () => {
+    setIsEnrollFormOpen(false)
+  }
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target
+    setFormData((prev) => ({ ...prev, [name]: value }))
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    setIsEnrollFormOpen(false)
+  }
 
   return (
     <section className="pricing-section">
@@ -55,7 +88,7 @@ function Pricing() {
                   name="pricing-plan"
                   value={plan.name}
                   checked={selectedPlan === plan.name}
-                  onChange={() => setSelectedPlan(plan.name)}
+                  onChange={() => handlePlanChange(plan.name)}
                 />
                 <span className={`plan-radio${selectedPlan === plan.name ? ' active' : ''}`} aria-hidden="true" />
                 <div className="plan-meta">
@@ -92,7 +125,9 @@ function Pricing() {
 
             <div className="pricing-note-row">
               <p>{activePlan.note}</p>
-              <button type="button">Enroll Now</button>
+              <button type="button" onClick={openEnrollForm}>
+                Enroll Now
+              </button>
             </div>
           </div>
         </div>
@@ -112,6 +147,89 @@ function Pricing() {
           </p>
         </div>
       </div>
+
+      {isEnrollFormOpen && (
+        <div className="enroll-modal-backdrop" role="presentation" onClick={closeEnrollForm}>
+          <div
+            className="enroll-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="enroll-form-title"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div className="enroll-modal-header">
+              <h3 id="enroll-form-title">Enrollment Form</h3>
+              <button type="button" aria-label="Close enrollment form" onClick={closeEnrollForm}>
+                ×
+              </button>
+            </div>
+
+            <form className="enroll-form" onSubmit={handleSubmit}>
+              <label>
+                Student Name
+                <input
+                  type="text"
+                  name="studentName"
+                  value={formData.studentName}
+                  onChange={handleInputChange}
+                  required
+                />
+              </label>
+
+              <label>
+                Student Number
+                <input
+                  type="tel"
+                  name="studentNumber"
+                  value={formData.studentNumber}
+                  onChange={handleInputChange}
+                  required
+                />
+              </label>
+
+              <label>
+                Parent Name
+                <input type="text" name="parentName" value={formData.parentName} onChange={handleInputChange} required />
+              </label>
+
+              <label>
+                Parent WhatsApp Number
+                <input
+                  type="tel"
+                  name="parentWhatsapp"
+                  value={formData.parentWhatsapp}
+                  onChange={handleInputChange}
+                  required
+                />
+              </label>
+
+              <label>
+                Student School
+                <input
+                  type="text"
+                  name="studentSchool"
+                  value={formData.studentSchool}
+                  onChange={handleInputChange}
+                  required
+                />
+              </label>
+
+              <label>
+                Selected Pricing
+                <select name="pricingPlan" value={formData.pricingPlan} onChange={handleInputChange} required>
+                  {plans.map((plan) => (
+                    <option key={plan.name} value={plan.name}>
+                      {plan.name} - {plan.price}
+                    </option>
+                  ))}
+                </select>
+              </label>
+
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      )}
     </section>
   )
 }
