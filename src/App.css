@@ -1139,6 +1139,12 @@ body {
   gap: 16px;
 }
 
+.enroll-form-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .enroll-form label {
   display: flex;
   flex-direction: column;
@@ -1168,7 +1174,7 @@ body {
   box-shadow: 0 0 0 3px rgba(126, 150, 181, 0.2);
 }
 
-.enroll-form label:last-of-type {
+.enroll-form-full {
   grid-column: 1 / -1;
 }
 
@@ -2179,6 +2185,10 @@ body {
   .enroll-form {
     margin-top: 16px;
     grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .enroll-form-column {
     gap: 12px;
   }
 

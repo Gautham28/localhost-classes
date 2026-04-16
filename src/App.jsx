@@ -17,7 +17,7 @@ function App() {
     studentNumber: '',
     parentName: '',
     parentWhatsapp: '',
-    studentSchool: '',
+    studentClass: '',
     pricingPlan: 'Complete (Most Popular)',
   })
 
@@ -71,56 +71,64 @@ function App() {
             </div>
 
             <form className="enroll-form" onSubmit={handleSubmit}>
-              <label>
-                Student Name
-                <input
-                  type="text"
-                  name="studentName"
-                  value={formData.studentName}
-                  onChange={handleInputChange}
-                  required
-                />
-              </label>
+              <div className="enroll-form-column">
+                <label>
+                  Student Name
+                  <input
+                    type="text"
+                    name="studentName"
+                    value={formData.studentName}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </label>
 
-              <label>
-                Student Number
-                <input
-                  type="tel"
-                  name="studentNumber"
-                  value={formData.studentNumber}
-                  onChange={handleInputChange}
-                  required
-                />
-              </label>
+                <label>
+                  Student Number
+                  <input
+                    type="tel"
+                    name="studentNumber"
+                    value={formData.studentNumber}
+                    onChange={handleInputChange}
+                  />
+                </label>
 
-              <label>
-                Parent Name
-                <input type="text" name="parentName" value={formData.parentName} onChange={handleInputChange} required />
-              </label>
+                <label>
+                  Student Class
+                  <input
+                    type="text"
+                    name="studentClass"
+                    value={formData.studentClass}
+                    onChange={handleInputChange}
+                  />
+                </label>
+              </div>
 
-              <label>
-                Parent WhatsApp Number
-                <input
-                  type="tel"
-                  name="parentWhatsapp"
-                  value={formData.parentWhatsapp}
-                  onChange={handleInputChange}
-                  required
-                />
-              </label>
+              <div className="enroll-form-column">
+                <label>
+                  Parent Name
+                  <input
+                    type="text"
+                    name="parentName"
+                    value={formData.parentName}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </label>
 
-              <label>
-                Student School
-                <input
-                  type="text"
-                  name="studentSchool"
-                  value={formData.studentSchool}
-                  onChange={handleInputChange}
-                  required
-                />
-              </label>
+                <label>
+                  Parent WhatsApp Number
+                  <input
+                    type="tel"
+                    name="parentWhatsapp"
+                    value={formData.parentWhatsapp}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </label>
+              </div>
 
-              <label>
+              <label className="enroll-form-full">
                 Selected Pricing
                 <select name="pricingPlan" value={formData.pricingPlan} onChange={handleInputChange} required>
                   <option value="Starter">Starter - ₹2,000</option>
