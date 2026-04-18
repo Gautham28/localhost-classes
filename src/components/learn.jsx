@@ -2,108 +2,104 @@ const learnCards = [
   {
     title: 'HTML Fundamentals',
     text: 'Learn how to structure beautiful web pages using proper HTML5 and semantic tags.',
-    icon: 'stress',
+    icon: 'html',
   },
   {
     title: 'Modern CSS Styling',
     text: 'Create stunning designs with colors, fonts, animations, Flexbox, and responsive layouts.',
-    icon: 'chart',
+    icon: 'css',
   },
   {
     title: 'JavaScript Interactivity',
     text: 'Make websites come alive - add buttons, quizzes, animations, and dynamic content.',
-    icon: 'search',
+    icon: 'javascript',
   },
   {
     title: 'Git & GitHub Workflow',
     text: 'Learn real developer skills - version control, collaboration, and deploying websites live on the internet.',
-    icon: 'stairs',
+    icon: 'git',
   },
   {
     title: '4 Real Portfolio Projects',
     text: 'Build and deploy 4 complete projects: Personal Portfolio, Quiz Game, Goa Tourism Page, and Smart To-Do List App.',
-    icon: 'support',
+    icon: 'projects',
   },
   {
     title: 'Professional Portfolio + Confidence',
     text: 'End with a strong GitHub portfolio + certificate that your child can proudly show to teachers and friends.',
-    icon: 'mentor',
+    icon: 'portfolio',
   },
 ]
 
 function CardIcon({ type }) {
-  if (type === 'chart') {
+  if (type === 'html') {
     return (
       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M4 20V11" />
-        <path d="M10 20V8" />
-        <path d="M16 20V13" />
-        <path d="M22 20V6" />
-        <path d="M4 6.5L10 10L16.2 5.5L22 2.5" />
-        <circle cx="4" cy="6.5" r="1.15" />
-        <circle cx="10" cy="10" r="1.15" />
-        <circle cx="16.2" cy="5.5" r="1.15" />
-        <circle cx="22" cy="2.5" r="1.15" />
+        <path d="M8 7L4 12L8 17" />
+        <path d="M16 7L20 12L16 17" />
+        <path d="M13 5L11 19" />
       </svg>
     )
   }
 
-  if (type === 'search') {
+  if (type === 'css') {
     return (
       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <circle cx="10.2" cy="10.2" r="6.8" />
-        <path d="M15.6 15.6L21 21" />
+        <path d="M5 7H19" />
+        <circle cx="15" cy="7" r="1.8" />
+        <path d="M5 12H19" />
+        <circle cx="9" cy="12" r="1.8" />
+        <path d="M5 17H19" />
+        <circle cx="17" cy="17" r="1.8" />
       </svg>
     )
   }
 
-  if (type === 'stairs') {
+  if (type === 'javascript') {
     return (
       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M2.5 20.5H21.5" />
-        <path d="M4.5 18.5H8.5V14.5H12.5V10.5H16.5V6.5H20.5" />
-        <path d="M20.5 6.5L18.5 8.5" />
-        <path d="M20.5 6.5L18.5 4.5" />
+        <path d="M13 2L4 14H11L10 22L20 9H12L13 2Z" />
       </svg>
     )
   }
 
-  if (type === 'support') {
+  if (type === 'git') {
     return (
       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M6 13V11.4C6 7.87 8.69 5 12 5C15.31 5 18 7.87 18 11.4V13" />
-        <rect x="3" y="12" width="4" height="6.2" rx="1.2" />
-        <rect x="17" y="12" width="4" height="6.2" rx="1.2" />
-        <path d="M8.5 18.2H11.5" />
-        <path d="M12 18.2C12 19.5 13 20.5 14.2 20.5H16.8" />
-        <path d="M9 10.7H15" />
+        <circle cx="6" cy="6" r="2.2" />
+        <circle cx="6" cy="18" r="2.2" />
+        <circle cx="18" cy="12" r="2.2" />
+        <path d="M6 8.2V15.8" />
+        <path d="M8.1 6.8L15.9 11.2" />
+        <path d="M8.1 17.2L15.9 12.8" />
       </svg>
     )
   }
 
-  if (type === 'mentor') {
+  if (type === 'projects') {
     return (
       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <rect x="10.5" y="3.3" width="10" height="7.5" rx="1.2" />
-        <path d="M14 13.3H3.5C2.67 13.3 2 13.97 2 14.8V19.8" />
-        <circle cx="6.5" cy="10.5" r="2.5" />
-        <path d="M16 7.1H18.3" />
-        <path d="M14.2 18.2L10.4 20.6" />
-        <path d="M20.2 13.2L17.3 16.3L15.5 14.7" />
+        <path d="M4 9.5C4 8.67 4.67 8 5.5 8H9.5L11 6.5H18.5C19.33 6.5 20 7.17 20 8V18.5C20 19.33 19.33 20 18.5 20H5.5C4.67 20 4 19.33 4 18.5V9.5Z" />
+        <path d="M8 12H16" />
+        <path d="M8 15.5H13" />
       </svg>
     )
   }
 
-  return (
-    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <circle cx="12" cy="9.8" r="4.8" />
-      <path d="M5.4 21L6.7 16.3" />
-      <path d="M18.6 21L17.3 16.3" />
-      <path d="M7.7 14.7L9.6 17.7" />
-      <path d="M16.3 14.7L14.4 17.7" />
-      <path d="M9.4 9.4C9.9 10.1 10.8 10.6 12 10.6C13.2 10.6 14.1 10.1 14.6 9.4" />
-    </svg>
-  )
+  if (type === 'portfolio') {
+    return (
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M8 9H16V14C16 16.2 14.2 18 12 18C9.8 18 8 16.2 8 14V9Z" />
+        <path d="M8 9H6.5C6.5 11 7.2 12 8 12" />
+        <path d="M16 9H17.5C17.5 11 16.8 12 16 12" />
+        <path d="M10 18V20H14V18" />
+        <path d="M7 21H17" />
+        <path d="M12 5V8" />
+      </svg>
+    )
+  }
+
+  return null
 }
 
 function Learn() {
