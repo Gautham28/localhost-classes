@@ -692,7 +692,7 @@ body {
   width: 366.66px;
   max-width: 100%;
   min-height: 362.41px;
-  padding: 30px;
+  padding: 34px 36px 42px;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.16);
   background: #ffffff;
@@ -711,7 +711,7 @@ body {
 }
 
 .review-text {
-  margin: 18px 0 0;
+  margin: 18px 0 28px;
   font-size: 16px;
   line-height: 1.6;
   color: #555555;
@@ -720,6 +720,7 @@ body {
 
 .review-user {
   margin-top: auto;
+  padding-top: 8px;
   display: flex;
   align-items: flex-start;
 }
@@ -734,30 +735,11 @@ body {
 }
 
 .review-role {
-  margin: 7px 0 0;
+  margin: 8px 0 0;
   color: #555555;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 400;
-}
-
-.review-dots {
-  margin: 56px auto 0;
-  width: max-content;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.review-dots span {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.5);
-}
-
-.review-dots .active {
-  background: #fff;
 }
 
 .why-section {
@@ -2042,7 +2024,7 @@ body {
   }
 
   .review-card {
-    padding: 16px;
+    padding: 22px 22px 32px;
     border-radius: 11px;
   }
 

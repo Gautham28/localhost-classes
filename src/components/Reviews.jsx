@@ -1,21 +1,21 @@
 const reviews = [
   {
     stars: 5,
-    text: 'My son built his own website in 6 weeks! He is so proud and confident now. The projects were actually fun.',
-    name: 'Priya Sharma',
-    role: 'Mother of Aarav (Class 9)',
+    text: "It's pretty well going on. Gautam is very good at teaching it perfectly, and whenever I'm missing the session I'm able to cover the thing with the recording session.",
+    name: 'Pritam',
+    role: 'Student',
   },
   {
     stars: 5,
-    text: 'Best decision! The small batch meant personal attention. My daughter loved making the quiz game.',
-    name: 'Rohan Patil',
-    role: 'Father of Ananya (Class 10)',
+    text: 'It was a great workshop. We got to learn a lot of new things.',
+    name: 'Saish Sunil Kandolkar',
+    role: 'Student',
   },
   {
     stars: 5,
-    text: 'Teaching style is very patient and clear. My child looks forward to every Saturday & Sunday class.',
-    name: 'Sneha Khan',
-    role: 'Mother of Vihaan (Class 8)',
+    text: "Overall I think that that course was really good. I'm glad that I took it. It took a fast pace at times but the recordings helped for that matter. It was pretty informative as well.",
+    name: 'Naysa',
+    role: 'Student',
   },
 ]
 
@@ -43,12 +43,6 @@ function Reviews() {
               </div>
             </article>
           ))}
-        </div>
-
-        <div className="review-dots" aria-hidden="true">
-          <span className="active" />
-          <span />
-          <span />
         </div>
       </div>
     </section>
