@@ -151,7 +151,7 @@ body {
   z-index: 2;
   width: min(1200px, calc(100% - 32px));
   margin: 52px auto 0;
-  padding-bottom: 220px;
+  padding-bottom: 120px;
 }
 
 .hero-content {
@@ -394,7 +394,7 @@ body {
   position: relative;
   z-index: 4;
   margin-top: 0;
-  padding: 130px 30px 65px;
+  padding: 80px 30px 65px;
   background: #ffffff;
   color: #222428;
 }
@@ -407,9 +407,9 @@ body {
 .learn-title-wrap {
   width: 670px;
   max-width: 100%;
-  min-height: 155.2px;
+  min-height: 110px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -427,7 +427,7 @@ body {
 
 .learn-grid {
   width: min(1200px, 100%);
-  margin: 40px auto 0;
+  margin: 20px auto 0;
   background: #ebeef3;
   border-radius: 10px;
   padding: 10px;
@@ -1537,7 +1537,7 @@ body {
 
   .hero-section {
     margin-top: 42px;
-    padding-bottom: 180px;
+    padding-bottom: 90px;
   }
 
   .hero-title-list {
@@ -1851,7 +1851,7 @@ body {
   .hero-section {
     width: calc(100% - 20px);
     margin-top: 34px;
-    padding-bottom: 160px;
+    padding-bottom: 56px;
   }
 
   .hero-content h1 {
