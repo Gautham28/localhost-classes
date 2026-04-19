@@ -905,6 +905,7 @@ body {
   gap: 14px;
   cursor: pointer;
   flex: 1;
+  min-height: 96px;
 }
 
 .plan-item-selected {
@@ -937,6 +938,11 @@ body {
   font-size: 21px;
   line-height: 1.1;
   color: #2a2e34;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
 }
 
 .plan-meta p {
@@ -966,6 +972,7 @@ body {
   border: 1px solid #e0e3e9;
   background: #f8f8f9;
   padding: 38px 40px 34px;
+  min-height: 360px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1060,9 +1067,11 @@ body {
 }
 
 .pricing-trust span {
-  color: #a1a6ae;
-  font-size: 18px;
-  line-height: 1;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  display: inline-block;
+  background: #a1a6ae;
 }
 
 .enroll-modal-backdrop {
@@ -1713,6 +1722,7 @@ body {
   .plan-item {
     padding: 14px 16px;
     gap: 11px;
+    min-height: 88px;
   }
 
   .plan-meta h3 {
@@ -1729,6 +1739,7 @@ body {
 
   .pricing-details {
     padding: 20px;
+    min-height: 320px;
   }
 
   .feature-columns li {
@@ -2111,6 +2122,7 @@ body {
     grid-template-columns: auto minmax(0, 1fr);
     row-gap: 8px;
     padding: 12px;
+    min-height: 84px;
   }
 
   .plan-price {
@@ -2131,6 +2143,7 @@ body {
   .pricing-details {
     padding: 14px 12px;
     gap: 18px;
+    min-height: 300px;
   }
 
   .feature-columns {

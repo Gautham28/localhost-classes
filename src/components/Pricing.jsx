@@ -105,15 +105,15 @@ function Pricing({ onEnrollClick }) {
 
         <div className="pricing-trust">
           <p>
-            <span aria-hidden="true">◉</span>
+            <span className="pricing-trust-dot" aria-hidden="true" />
             Beginner friendly
           </p>
           <p>
-            <span aria-hidden="true">◍</span>
+            <span className="pricing-trust-dot" aria-hidden="true" />
             Live mentorship support
           </p>
           <p>
-            <span aria-hidden="true">◎</span>
+            <span className="pricing-trust-dot" aria-hidden="true" />
             Project-based outcomes
           </p>
         </div>
