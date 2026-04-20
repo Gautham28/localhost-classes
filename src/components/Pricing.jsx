@@ -3,14 +3,7 @@ import { useState } from 'react'
 
 const plans = [
   {
-    name: 'Starter',
-    price: '₹2,000',
-    featuresLeft: ['4-week beginner program', 'HTML + CSS foundations', '2 simple guided projects'],
-    featuresRight: ['Live classes + recordings', 'Practice assignments', 'Beginner-friendly pace'],
-    note: "Great for kids starting web development for the first time.",
-  },
-  {
-    name: 'Complete (Most Popular)',
+    name: 'Classroom',
     price: '₹4,000',
     featuresLeft: [
       'Full 8-week live program',
@@ -22,17 +15,17 @@ const plans = [
     note: "Pick the plan that best fits your child's learning pace and goals.",
   },
   {
-    name: 'Pro',
-    price: '₹5,500',
-    featuresLeft: ['Everything in Complete', '1:1 portfolio review session', 'Priority doubt clearing'],
+    name: '1:1',
+    price: '₹10,000',
+    featuresLeft: ['Everything in Classroom', '1:1 portfolio review session', 'Priority doubt clearing'],
     featuresRight: ['Extra feedback + polish', 'Advanced project guidance', 'Personalized roadmap support'],
     note: 'Best for students who want deeper mentoring and stronger final polish.',
   },
 ]
 
 function Pricing({ onEnrollClick }) {
-  const [selectedPlan, setSelectedPlan] = useState(plans[1].name)
-  const activePlan = plans.find((plan) => plan.name === selectedPlan) ?? plans[1]
+  const [selectedPlan, setSelectedPlan] = useState(plans[0].name)
+  const activePlan = plans.find((plan) => plan.name === selectedPlan) ?? plans[0]
 
   const handlePlanChange = (planName) => {
     setSelectedPlan(planName)
