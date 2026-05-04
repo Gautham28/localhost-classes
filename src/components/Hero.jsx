@@ -1,7 +1,7 @@
 import heroCard from '../assets/hero-card.png'
 
 const points = [
-  'Zero to Hero in 8 Weeks',
+  'Zero to Hero in 4 Weeks',
   'Small Batches (10-15 students)',
   'Live Classes + Recordings',
 ]
@@ -47,8 +47,8 @@ function Hero({ onEnrollClick }) {
         </div>
 
         <p className="hero-subheadline">
-          From zero to building 4 real, live websites in 8 weeks. Fun, project-based learning for
-          school kids (8th-12th).
+          From zero to building 4 real, live websites in 4 weeks. Fun, project-based learning for
+          kids.
         </p>
 
         <button className="hero-cta" type="button" onClick={onEnrollClick}>

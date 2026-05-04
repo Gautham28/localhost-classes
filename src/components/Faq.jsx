@@ -9,7 +9,7 @@ const faqItems = [
   {
     question: 'What will I actually learn?',
     answer:
-      'Your child will learn HTML, CSS, JavaScript, Git & GitHub, and how to deploy live websites. By the end of 8 weeks, they will have built and deployed 4 real projects — a Personal Portfolio, Interactive Quiz Game, Goa Tourism Landing Page, and a Smart To-Do List App.',
+      'Your child will learn HTML, CSS, JavaScript, Git & GitHub, and how to deploy live websites. By the end of 4 weeks, they will have built and deployed 4 real projects — a Personal Portfolio, Interactive Quiz Game, Goa Tourism Landing Page, and a Smart To-Do List App.',
   },
   {
     question: 'Do I need to buy any software or tools?',

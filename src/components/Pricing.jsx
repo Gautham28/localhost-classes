@@ -6,7 +6,7 @@ const plans = [
     name: 'Classroom',
     price: '₹4,000',
     featuresLeft: [
-      'Full 8-week live program',
+      'Full 4-week live program',
       'Project-based learning approach',
       'Small batches and personal attention',
       'Portfolio-ready GitHub projects',
